@@ -1,0 +1,493 @@
+Start,End,Category,Descriptors,,
+00:00,4,20:59,48,Q1,
+00:00,0,00:05,4,Start,
+00:00,0,00:26,72,Own BS2,Outlet - Full Press - Retain
+00:24,68,00:50,68,Own BS2,Full Press - Retain
+00:27,68,00:53,68,Own BS2,75 Press - Counterattack - Retain
+00:23,8,00:53,8,Own counter attack,
+00:37,68,01:03,68,Own BS4,
+00:34,68,00:53,68,Own  A25 E,Left - Retain
+00:40,20,01:00,20,Own HB ATT,CP
+00:28,16,01:01,16,Own Circle possesion,Right - GSO - Long corner - Retain
+00:32,24,00:57,24,Own GSO,on target - saved
+00:56,56,01:22,56,Own BS4,
+00:58,4,01:18,4,Own HB ATT,TO
+01:13,32,01:38,32,Opp Press,75 Press
+01:21,48,01:46,48,Own TO4,Right
+01:32,72,01:58,72,Opp BS1,Full Press - TO
+01:40,68,02:05,68,Opp TO3,Centre Top
+01:47,52,02:12,52,Own TO3,Left
+01:57,24,02:22,24,Opp TO2,Right
+02:02,12,02:27,12,Own Outlet,75 Press - TO
+02:07,32,02:32,32,Own TO2,Right
+01:57,96,02:27,96,Opp Counter Attack,
+02:06,92,02:25,92,Opp A25 E,Left - CP
+01:57,60,02:31,60,Opp Circle Possession,Left - GSO - Retain
+02:08,40,02:33,40,Opp GSO,on target - saved
+02:39,36,03:05,36,Opp BS4,
+02:46,52,03:06,52,Opp HB ATT,
+02:47,96,03:06,96,Opp A25 E,Left
+02:37,40,03:11,40,Opp Circle Possession,Left - TO C
+02:57,36,03:22,36,Opp TO C,
+02:59,68,03:24,68,Own TO2,Left
+03:03,60,03:29,60,Opp BS3,Right - Deep Press - TO
+03:15,92,03:41,92,Opp TO4,Left
+03:29,56,03:55,56,Own BS1,Full Press - Breach - A25e
+03:41,80,04:00,80,Own  A25 E,Centre Top
+03:56,24,04:22,24,Own BS4,TO
+04:03,0,04:28,0,Own TO4,Centre Top
+04:08,12,04:33,12,Own Press,Full Press
+04:17,8,04:42,8,Opp TO1,Right
+04:18,24,04:44,24,Own BS4,TO
+04:21,52,04:41,52,Own HB ATT,
+04:42,44,05:07,44,Own TO3,Left - Counterattack
+04:34,92,05:04,92,Opp Counter Attack,
+04:48,92,05:07,92,Opp A25 E,Left
+04:40,8,05:14,8,Opp Circle Possession,Bline L - PCW
+05:02,20,05:12,20,Opp PCW,
+05:55,56,06:07,56,Own PCD,
+06:16,20,06:28,20,Own PCD,GSO
+06:04,8,06:29,8,Opp GSO,on target - saved
+06:26,44,06:51,44,Opp TO C,
+06:34,4,07:00,4,Own BS1,75 Press - Retain
+06:45,44,07:14,44,Own BS2,Full Press - TO
+07:09,44,07:34,44,Own TO3,Right
+07:19,44,07:45,44,Opp BS3,75 Press - A25e
+07:20,60,07:43,76,Opp A25 E,Right - BS 4
+07:39,72,08:05,72,Opp BS4,A25e
+07:43,12,08:03,12,Opp HB ATT,
+07:51,16,08:10,16,Opp A25 E,Centre Top - CP
+07:43,64,08:17,64,Opp Circle Possession,Right - GSO - Goal
+07:48,52,08:13,52,Opp GSO,on target - scored
+07:51,28,08:11,28,Opp Goal,
+08:19,8,08:45,8,Own BS2,75 Press - A25e
+08:35,40,08:54,40,Own  A25 E,Right
+08:50,96,09:16,96,Own BS4,Retain
+08:56,88,09:22,88,Own BS4,TO
+09:03,44,09:28,44,Own TO4,Right
+08:55,88,09:25,88,Opp Counter Attack,A25e
+09:09,44,09:28,44,Opp A25 E,Left - TO
+09:17,20,09:42,20,Opp TO4,Left
+09:34,12,10:00,12,Own BS1,75 Press - Retain
+09:44,88,10:10,88,Own BS2,75 Press - TO
+09:57,96,10:22,96,Own TO3,Left
+09:58,84,10:24,84,Opp BS2,75 Press - Outlet - TO
+10:15,20,10:40,20,Opp TO3,Left
+10:17,48,10:43,48,Own BS2,75 Press - TO
+10:24,56,10:49,56,Own TO2,Left
+10:13,76,10:43,76,Opp Counter Attack,
+10:23,32,10:42,32,Opp A25 E,Centre Top - TO
+10:31,68,10:56,68,Opp TO4,Centre Top
+10:33,76,10:59,76,Own BS1,75 Press - TO
+10:52,52,11:17,52,Own TO3,Right
+10:45,32,11:15,32,Opp Counter Attack,
+10:56,16,11:15,16,Opp A25 E,Left - CP
+10:47,52,11:21,52,Opp Circle Possession,Left - TO
+11:05,32,11:30,32,Opp TO C,
+11:11,68,11:36,68,Own TO2,Right
+11:19,84,11:38,84,Opp A25 E,Right - CP
+11:12,16,11:46,16,Opp Circle Possession,BLine R - PCW
+11:36,24,11:46,24,Opp PCW,
+12:26,96,12:38,96,Own PCD,CP
+12:13,8,12:47,8,Opp Circle Possession,Centre Top - Retain
+12:39,88,13:05,88,Opp BS4,Retain
+13:02,4,13:28,4,Opp BS4,TO
+13:10,8,13:35,8,Opp TO4,Centre Top
+13:18,88,13:47,80,Own BS1,Full Press - Breach - A25e
+13:38,16,13:57,16,Own  A25 E,Right
+13:56,80,14:22,80,Own BS4,TO
+14:06,68,14:31,68,Own TO4,Right
+14:16,0,14:41,0,Opp TO2,Left
+14:16,88,14:42,88,Own BS3,75 Press - TO
+14:31,4,14:56,4,Own TO4,Right
+14:42,72,15:08,72,Opp BS1,Full Press - Retain
+14:52,60,15:18,60,Opp BS2,Full Press - Retain
+15:08,44,15:34,44,Opp BS3,Deep Press - Breach
+15:20,16,15:39,16,Opp A25 E,Centre Top
+15:11,92,15:45,92,Opp Circle Possession,Centre Top - GSO - Goal
+15:16,60,15:41,60,Opp GSO,on target - scored
+15:21,40,15:41,40,Opp Goal,
+15:47,88,16:13,88,Own BS2,75 Press - TO
+15:46,64,16:16,64,Opp Counter Attack,
+15:59,16,16:24,16,Own TO2,Centre Top - Counterattack
+15:56,44,16:15,44,Opp A25 E,Centre Top - Retain
+16:22,68,16:48,68,Opp BS4,A25e
+16:25,64,16:45,64,Opp HB ATT,
+16:28,96,16:47,96,Opp A25 E,Left - CP
+16:20,44,16:54,44,Opp Circle Possession,Bline L - Retain
+16:41,28,17:07,28,Opp BS4,TO
+16:45,20,17:05,20,Opp HB ATT,
+16:57,76,17:22,76,Opp TO4,Right
+17:05,16,17:31,16,Own BS1,Full Press - Retain
+17:16,8,17:42,8,Own BS3,A25e
+17:21,20,17:40,20,Own  A25 E,Left
+20:59,48,46:29:00,96,Q2,75 Press - Retain - 75 Press - TO - Left - Full Press - TO - Right - Left - CP - Centre Top - PCW - Retain - Retain - TO - Left - Counterattack - TO - Left - 75 Press - TO - Left - Right - 75 Press - Retain - 75 Press - A25e - Left - TO - Left - Full Press - Outlet - Deep Press - A25e - Left - Retain - A25e - Centre Top - CP - Centre Top - PCW - TO C - Full Press - TO - Right - 75 Press - Deep Press - TO - Left - Counterattack - Retain - 75 Press - Breach - Full Press - TO - Right - Counterattack - TO - Left - Right - Counterattack - A25e - Left - CP - Bline L - TO C - Counterattack - Breach - TO - Right - Counterattack - Retain - Deep Press - A25e - Centre Top - BS 4 - A25e - Right - A25e - Left - TO - Right - Full Press - Breach - A25e - Left - TO - Left - Breach - TO - Right - Counterattack - TO - Centre Top - Counterattack - A25e - Right - TO - Right - Retain - A25e - Right - TO - Right - Counterattack - Breach - TO - Left - 75 Press - TO - Left - Right - Deep Press - Breach - TO - Right - Full Press - Breach - 75 Press - Breach - A25e - Retain - CP - BLine R - Retain - Deep Press - A25e - Left - CP - Bline L - TO - TO C - Full Press - Retain - 75 Press - TO - Centre Top - Counterattack - Breach - A25e - TO - Left - Centre Top - 75 Press - TO - Left - Counterattack - A25e - Centre Top - TO - Centre Top - 75 Press - TO - TO - Centre Top - 75 Press - TO - Left - 75 Press - TO - Left - Right - Counterattack - Counterattack - Breach - A25e - Left - TO - Centre Top - Deep Press - Breach - A25e - Left - BS 4 - Left - TO - Left - Full Press - TO - Right - 75 Press - TO - Centre Top - A25e - Right - Left - Full Press - TO - Centre Top - 75 Press - TO - Right
+20:54,4,21:20,4,Own BS2,75 Press - Retain
+21:13,64,21:39,64,Own BS2,75 Press - TO
+21:20,12,21:45,12,Own TO3,Left
+21:27,92,21:52,92,Opp Outlet,Full Press - TO
+21:29,52,21:48,52,Own  A25 E,Left - CP
+21:33,12,21:58,12,Opp TO2,Right
+21:22,52,21:55,52,Own Circle possesion,Centre Top - Retain
+21:41,20,22:07,20,Own BS4,Retain
+22:04,96,22:30,96,Own BS4,TO
+22:11,72,22:36,72,Own TO4,Left - Counterattack
+22:02,76,22:32,76,Opp Counter Attack,TO
+22:21,12,22:46,12,Opp TO3,Left
+22:28,76,22:54,76,Own BS2,75 Press - TO
+22:44,96,23:09,96,Own TO2,Left
+22:47,96,23:12,96,Opp TO3,Right
+22:50,68,23:15,68,Own Outlet,75 Press - Retain
+23:04,40,23:36,24,Own BS3,75 Press - A25e
+23:29,52,23:48,52,Own  A25 E,Left - TO
+23:36,32,24:01:00,32,Own TO4,Left
+23:50,48,24:16:00,48,Opp BS2,Full Press - Outlet
+24:12:00,24,24:37:00,24,Opp Outlet,Deep Press - A25e
+24:16:00,92,24:35:00,92,Opp A25 E,Left - Retain
+24:26:00,32,24:46:00,32,Opp HB ATT,A25e
+24:25:00,20,24:44:00,20,Opp A25 E,Centre Top - CP
+24:17:00,68,24:51:00,68,Opp Circle Possession,Centre Top - PCW
+24:37:00,52,24:47:00,52,Opp PCW,
+25:27:00,20,25:42:00,96,Own PCD,TO C
+25:38:00,28,26:03:00,28,Opp TO C,
+25:54:00,72,26:20:00,72,Own BS1,Full Press - TO
+26:12:00,76,26:37:00,76,Own TO2,Right
+26:13:00,64,26:39:00,64,Opp BS3,Deep Press - TO
+26:31:00,8,26:57:00,8,Own BS2,Retain - 75 Press - Breach
+26:33:00,64,26:58:00,64,Opp TO3,Left
+26:38:00,12,27:04:00,12,Own BS3,Full Press - TO
+26:44:00,40,27:09:00,40,Own TO3,Right - Counterattack
+26:33:00,44,27:03:00,44,Opp Counter Attack,TO
+26:50:00,0,27:15:00,0,Opp TO3,Left
+26:54:00,84,27:19:00,84,Own TO2,Right - Counterattack
+26:41:00,84,27:11:00,84,Opp Counter Attack,A25e
+26:53:00,84,27:12:00,84,Opp A25 E,Left - CP
+26:46:00,40,27:20:00,40,Opp Circle Possession,Bline L - TO C
+27:06:00,28,27:31:00,28,Opp TO C,Counterattack
+26:57:00,84,27:27:00,84,Own counter attack,TO
+27:20:00,12,27:45:00,12,Own TO3,Right - Counterattack
+27:08:00,44,27:38:00,44,Opp Counter Attack,Retain
+27:40:00,60,28:06:00,60,Opp BS3,Deep Press - A25e
+27:42:00,80,28:01:00,80,Opp A25 E,Centre Top - BS 4
+27:55:00,56,28:25:00,68,Opp BS4,A25e
+28:01:00,56,28:21:00,56,Opp HB ATT,
+28:16:00,68,28:35:00,68,Opp A25 E,Right - TO
+28:25:00,40,28:50:00,40,Opp TO4,Centre Top
+28:28:00,72,28:54:00,72,Own BS1,75 Press - TO
+28:37:00,64,29:02:00,64,Own TO3,Left
+28:45:00,40,29:18:00,36,Opp BS2,75 Press - TO
+29:13:00,36,29:38:00,36,Opp TO4,Left
+29:20:00,76,29:45:00,76,Own TO3,Right - Counterattack
+29:10:00,96,29:40:00,96,Opp Counter Attack,A25e
+29:21:00,4,29:40:00,4,Opp A25 E,Left - TO
+29:32:00,36,29:57:00,36,Opp TO4,Right
+29:42:00,36,30:08:00,36,Own BS1,Full Press - Breach - A25e
+29:51:00,56,30:10:00,56,Own  A25 E,Left - TO
+30:02:00,28,30:27:00,28,Own TO4,Left - Breach - TO
+30:12:00,88,30:37:00,88,Opp TO3,Right
+30:13:00,92,30:39:00,92,Own BS3,Counterattack - TO
+30:22:00,88,30:47:00,88,Own TO4,Centre Top - Counterattack
+30:12:00,72,30:42:00,72,Opp Counter Attack,A25e
+30:33:00,8,30:52:00,8,Opp A25 E,Right - TO
+30:48:00,88,31:13:00,88,Own TO4,Right - Counterattack
+30:39:00,56,31:09:00,56,Own counter attack,Breach - A25e
+30:54:00,60,31:13:00,60,Own  A25 E,Left - TO
+31:02:00,40,31:27:00,40,Own TO4,Centre Top
+31:12:00,16,31:38:00,16,Opp BS1,Deep Press - Breach - A25e
+31:20:00,36,31:41:00,44,Opp A25 E,Left - BS 4
+31:37:00,40,32:03:00,40,Opp BS4,Retain
+31:59:00,96,32:25:00,96,Opp BS4,A25e
+32:02:00,96,32:22:00,96,Opp HB ATT,
+32:02:00,56,32:21:00,56,Opp A25 E,Right
+32:16:00,44,32:36:00,44,Opp HB ATT,TO
+32:25:00,84,32:50:00,84,Opp TO4,Right - Counterattack
+32:15:00,40,32:45:00,40,Own counter attack,Breach - TO
+32:38:00,52,33:03:00,52,Own TO4,Left
+32:54:00,88,33:20:00,88,Opp BS1,75 Press - TO
+33:06:00,64,33:31:00,64,Opp TO3,Left
+33:09:00,48,33:34:00,48,Own TO3,Right
+33:17:00,40,33:42:00,40,Opp Outlet,Deep Press - TO
+33:24:00,4,33:49:00,4,Opp TO4,Right
+33:28:00,72,33:54:00,72,Own BS1,Full Press - Breach
+33:50:00,84,34:15:00,84,Own Outlet,75 Press - Breach - A25e
+33:57:00,68,34:16:00,68,Own  A25 E,Left - TO
+34:09:00,88,34:34:00,88,Own TO4,Left
+34:15:00,68,34:41:00,68,Opp BS1,Full Press - TO
+34:23:00,72,34:48:00,72,Opp TO2,Right
+34:29:00,8,34:55:00,8,Own BS3,75 Press - TO
+34:43:00,76,35:08:00,76,Own TO3,Centre Top
+34:53:00,16,35:20:00,16,Opp BS3,A25e
+34:57:00,0,35:16:00,0,Opp A25 E,Right - Retain
+35:17:00,64,35:43:00,64,Opp BS4,CP
+35:20:00,96,35:40:00,96,Opp HB ATT,
+35:08:00,28,35:42:00,28,Opp Circle Possession,BLine R - Retain
+35:36:00,12,36:02:00,12,Opp BS4,Deep Press - A25e
+35:39:00,4,35:59:00,4,Opp HB ATT,
+35:44:00,8,36:03:00,8,Opp A25 E,Left - CP
+35:37:00,16,36:11:00,16,Opp Circle Possession,Bline L - TO - TO C
+35:59:00,48,36:24:00,48,Opp TO C,
+36:07:00,48,36:33:00,48,Own BS1,Full Press - Retain
+36:17:00,28,36:43:00,28,Own BS2,75 Press - TO
+36:22:00,96,36:47:00,96,Own TO3,Centre Top - Counterattack
+36:11:00,4,36:41:00,4,Opp Counter Attack,Breach - TO
+36:29:00,88,36:54:00,88,Opp TO3,Left
+36:37:00,8,37:02:00,8,Own TO3,Centre Top
+36:44:00,0,37:10:00,0,Opp BS2,75 Press - TO
+36:53:00,72,37:18:00,72,Opp TO3,Left - Counterattack
+36:45:00,48,37:15:00,48,Own counter attack,A25e
+36:56:00,64,37:15:00,64,Own  A25 E,Centre Top - TO
+37:08:00,80,37:33:00,80,Own TO4,Centre Top
+37:14:00,96,37:40:00,96,Opp BS1,75 Press - TO
+37:27:00,16,37:52:00,16,Opp TO4,Left
+37:38:00,32,38:04:00,32,Own BS1,Full Press - TO
+37:55:00,28,38:20:00,28,Own TO3,Centre Top
+38:10:00,28,38:35:00,28,Opp Outlet,75 Press - TO
+38:20:00,20,38:45:00,20,Opp TO4,Right
+46:22:00,20,46:48:00,20,Opp BS2,75 Press - TO
+46:29:00,96,67:25:00,48,Q3,TO C - Full Press - TO - Right - 75 Press - Outlet - Deep Press - Retain - 75 Press - Deep Press - TO - 75 Press - TO - Centre Top - Counterattack - A25e - Right - BS 4 - TO - scored - CP - BLine R - TO C - Full Press - TO - Right - Full Press - Breach - A25e - Centre Top - CP - Centre Top - PCW - GSO - on target - scored - saved - on target - saved - scored - Goal - 75 Press - Breach - A25e - Right - Retain - BS 4 - Left - TO - Centre Top - Right - BS 4 - TO - Right - TO - Left - Counterattack - A25e - Right - TO - Right - Full Press - Retain - Full Press - TO - Left - Counterattack - Right - TO - Right - Counterattack - Retain - 75 Press - Breach - A25e - Right - TO - Right - Full Press - Retain - Deep Press - TO - Centre Top - Counterattack - TO - Centre Top - Left - 75 Press - Breach - A25e - Right - BS 4 - TO - Right - Counterattack - Breach - Centre Top - CP - Right - GSO - off target - A25e - Centre Top - TO - Left - Left - 75 Press - A25e - Left - TO - Centre Top - Counterattack - A25e - Right - CP - BLine R - GSO - TO C - on target - saved - Centre Top - Counterattack - TO - Left - Deep Press - Counterattack - TO - Right - Counterattack - A25e - Right - Full Press - Counterattack - Breach - TO - Left - Full Press - Retain - TO - 75 Press - Retain - 75 Press - Retain - 75 Press - 75 Press - A25e - A25e - Left - TO - Left - Full Press - Retain - Full Press - A25e - Left - CP - Left - TO C - Counterattack - 75 Press - Full Press - TO - Right - Centre Top - Left - Right - Counterattack - A25e - CP - BLine R - Retain - Long corner - Centre Top - TO - Centre Top - TO - Right - Full Press - TO - Left - Counterattack - A25e - Right - TO - Right - Retain - 75 Press - TO - Right - Full Press - TO - Left - 75 Press - TO - Centre Top - Counterattack - Deep Press - TO - Centre Top - Centre Top - Counterattack - A25e - Right - BS 4 - TO - Centre Top - Counterattack
+46:35:00,12,47:00:00,12,Opp TO3,Centre Top - Counterattack
+46:23:00,68,46:53:00,68,Own counter attack,A25e
+46:35:00,72,46:54:00,72,Own  A25 E,Right - BS 4
+46:57:00,4,47:23:00,4,Own BS4,CP
+46:52:00,36,47:25:00,36,Own Circle possesion,BLine R - TO C
+47:12:00,8,47:37:00,8,Own TO C,
+47:39:00,36,48:05:00,36,Opp BS1,Full Press - TO
+48:00:00,68,48:25:00,68,Opp TO3,Right
+48:01:00,88,48:27:00,88,Own BS2,Full Press - Breach - A25e
+48:04:00,8,48:23:00,8,Own  A25 E,Centre Top - CP
+47:55:00,12,48:28:00,12,Own Circle possesion,Centre Top - PCW
+48:14:00,88,48:24:00,88,Own PCW,
+49:03:00,28,49:15:00,28,Own PCA,GSO
+48:53:00,48,49:18:00,48,Own GSO,on target - saved
+48:55:00,24,49:20:00,24,Own GSO,on target - scored - Goal
+48:58:00,88,49:18:00,88,Own Goal,
+49:30:00,4,49:56:00,4,Opp BS2,75 Press - Breach - A25e
+49:35:00,32,49:55:00,96,Opp A25 E,Right - Retain - BS 4
+49:55:00,92,50:21:00,92,Opp BS4,
+49:59:00,0,50:19:00,0,Opp HB ATT,
+49:57:00,64,50:16:00,64,Opp A25 E,Left - TO
+50:08:00,52,50:33:00,52,Opp TO4,Centre Top
+50:14:00,36,50:39:00,36,Own TO1,Right - BS 4
+50:29:00,20,50:55:00,20,Opp BS4,
+50:50:00,24,51:16:00,24,Opp BS4,TO
+50:52:00,52,51:12:00,52,Opp HB ATT,
+50:57:00,76,51:22:00,76,Opp TO4,Right
+51:14:00,8,51:40:00,8,Own BS1,TO
+51:22:00,8,51:47:00,8,Own TO2,Left - Counterattack - A25e
+51:20:00,60,51:39:00,60,Opp A25 E,Right - TO
+51:30:00,84,51:55:00,84,Opp TO4,Right
+51:33:00,80,51:59:00,80,Own BS1,Full Press - Retain
+51:45:00,60,52:11:00,60,Own BS1,Full Press - TO
+51:47:00,48,52:12:00,48,Own TO2,Left - Counterattack
+51:37:00,8,52:07:00,8,Opp Counter Attack,
+51:47:00,12,52:06:00,12,Opp A25 E,Right - TO
+51:57:00,84,52:22:00,84,Opp TO4,Right - Counterattack
+51:44:00,64,52:14:00,64,Own counter attack,Retain
+52:14:00,40,52:40:00,40,Own BS2,75 Press - Breach - A25e
+52:23:00,32,52:42:00,32,Own  A25 E,Right - TO
+52:27:00,72,52:53:00,72,Opp BS1,Full Press - Retain
+52:30:00,52,52:55:00,52,Own TO4,Right
+52:43:00,48,53:09:00,48,Opp BS3,Deep Press - TO
+53:05:00,80,53:30:00,80,Opp TO3,Centre Top - Counterattack
+52:53:00,44,53:23:00,44,Own counter attack,TO
+53:14:00,24,53:39:00,24,Own TO4,Centre Top
+53:18:00,52,53:43:00,52,Opp TO2,Left
+53:23:00,44,53:49:00,44,Own BS3,75 Press - Breach - A25e
+53:31:00,84,53:50:00,84,Own  A25 E,Right - BS 4
+53:42:00,28,54:08:00,28,Own BS4,TO
+53:57:00,20,54:22:00,20,Own TO3,Right - Counterattack
+53:46:00,92,54:16:00,92,Opp Counter Attack,Breach
+54:00:00,72,54:19:00,72,Opp A25 E,Centre Top - CP
+53:53:00,56,54:18:00,56,Opp GSO,off target
+53:51:00,12,54:25:00,12,Opp Circle Possession,TO C - Right - GSO
+54:09:00,76,54:34:00,76,Opp TO C,
+54:21:00,0,54:47:00,0,Own BS1,Full Press - TO
+54:31:00,36,54:56:00,36,Own TO3,Right - Outlet
+54:34:00,80,54:59:00,80,Opp Outlet,75 Press
+54:59:00,44,55:24:00,44,Opp Outlet,Deep Press - Retain
+55:19:00,88,55:45:00,88,Opp BS3,Deep Press - TO
+55:35:00,12,56:00:00,12,Opp TO3,Centre Top - Counterattack
+55:24:00,84,55:54:00,84,Own counter attack,TO
+55:45:00,80,56:10:00,80,Own TO3,Left
+55:45:00,60,56:11:00,60,Opp BS2,Deep Press - Counterattack
+55:35:00,24,56:05:00,24,Opp Counter Attack,TO
+55:51:00,72,56:16:00,72,Opp TO3,Right - Counterattack
+55:41:00,28,56:11:00,28,Own counter attack,A25e
+55:56:00,68,56:15:00,68,Own  A25 E,Right - TO
+56:04:00,68,56:29:00,68,Own TO4,Right
+56:18:00,60,56:44:00,60,Opp BS1,Full Press - TO
+56:30:00,96,56:55:00,96,Opp TO3,Left - Counterattack - A25e
+56:22:00,56,56:52:00,56,Own counter attack,
+56:32:00,84,56:51:00,84,Own  A25 E,Right - TO
+56:48:00,28,57:13:00,28,Own TO4,Right
+56:53:00,20,57:19:00,20,Opp BS1,Full Press - Counterattack - Breach
+56:49:00,0,57:19:00,0,Opp Counter Attack,TO
+57:04:00,36,57:29:00,36,Opp TO4,Left
+57:07:00,32,57:33:00,32,Own BS1,Full Press - Retain
+57:30:00,76,57:56:00,40,Own BS2,75 Press - Retain
+57:48:00,12,58:14:00,12,Own BS3,75 Press - Retain
+57:58:00,80,58:24:00,80,Own BS3,75 Press - A25e
+58:04:00,40,58:29:00,40,Own Outlet,75 Press - A25e
+58:05:00,8,58:24:00,8,Own  A25 E,Left - TO
+58:19:00,72,58:44:00,72,Own TO4,Left
+58:37:00,48,59:03:00,48,Opp BS1,Full Press - Retain
+58:46:00,96,59:12:00,96,Opp BS2,Full Press - Retain
+59:01:00,76,59:27:00,76,Opp BS3,75 Press - TO
+59:12:00,68,59:37:00,68,Opp TO4,Right
+59:14:00,0,59:40:00,0,Own BS1,Full Press - TO
+59:24:00,96,59:49:00,96,Own TO2,Left
+59:25:00,68,59:51:00,68,Opp BS3,75 Press - TO
+59:29:00,40,59:54:00,40,Opp TO3,Centre Top - Counterattack
+59:19:00,20,59:49:00,20,Own counter attack,A25e
+59:31:00,96,59:50:00,96,Own  A25 E,Left - CP
+59:20:00,52,59:53:00,52,Own Circle possesion,Left - TO C
+59:40:00,20,60:05:00,20,Own TO C,
+59:55:00,68,60:21:00,68,Opp BS3,Full Press - TO
+59:57:00,96,60:22:00,96,Opp TO3,Right
+60:09:00,60,60:34:00,60,Own TO3,Centre Top
+60:23:00,0,60:48:00,0,Opp TO3,Left - Counterattack
+60:18:00,28,60:48:00,28,Own counter attack,A25e
+60:28:00,24,60:47:00,24,Own  A25 E,Right - CP
+60:26:00,56,60:59:00,56,Own Circle possesion,BLine R - Retain - Long corner
+60:52:00,68,61:18:00,68,Own BS4,
+60:55:00,60,61:15:00,60,Own HB ATT,
+61:08:00,32,61:27:00,32,Own  A25 E,Centre Top - TO
+61:19:00,4,61:44:00,4,Own TO4,Centre Top
+61:36:00,88,62:02:00,88,Opp BS2,Deep Press - TO
+61:54:00,72,62:19:00,72,Opp TO3,Centre Top
+62:10:00,60,62:35:00,60,Own TO3,Centre Top - Counterattack
+61:58:00,16,62:28:00,16,Opp Counter Attack,A25e
+62:09:00,16,62:28:00,16,Opp A25 E,Right - BS 4
+62:17:00,48,62:43:00,48,Opp BS4,TO
+62:22:00,60,62:47:00,60,Opp TO4,Centre Top - Counterattack
+62:14:00,32,62:44:00,32,Own counter attack,A25e
+62:30:00,72,62:49:00,72,Own  A25 E,Centre Top - TO
+62:34:00,20,62:59:00,20,Own TO4,Left
+62:47:00,88,63:12:00,88,Opp TO3,Left
+62:52:00,52,63:22:00,64,Own BS2,75 Press - A25e
+63:13:00,20,63:32:00,20,Own  A25 E,Left - TO
+63:20:00,20,63:45:00,20,Own TO4,Centre Top - Counterattack
+63:14:00,96,63:44:00,96,Opp Counter Attack,A25e
+63:25:00,80,63:44:00,80,Opp A25 E,Right - CP
+63:19:00,40,63:53:00,40,Opp Circle Possession,BLine R - GSO - TO C
+63:30:00,56,63:55:00,56,Opp GSO,on target - saved
+63:42:00,56,64:07:00,56,Opp TO C,
+63:51:00,12,64:17:00,12,Own BS1,Full Press - Retain
+67:25:00,48,67:40:00,48,Q4,75 Press - Full Press - Retain - A25e - Left - TO - Left - Retain - Full Press - Full Press - A25e - Left - CP - Left - TO C - Full Press - Retain - Full Press - Outlet - Deep Press - A25e - Right - TO - Right - Left - Right - TO C - Full Press - Retain - 75 Press - TO - Left - Deep Press - A25e - A25e - CP - Right - Retain - TO - Left - Full Press - TO - Left - Full Press - A25e - Right - TO - Right - Full Press - TO - Left - Right - TO - Centre Top - Counterattack - Right - CP - BLine R - PCW - on target - saved - off target - Right - Deep Press - TO - Right - Counterattack - Centre Top - CP - Centre Top - Centre Top - TO C - 75 Press - Breach - A25e - Centre Top - CP - Right - TO C - Right - TO C - 75 Press - TO - Left - Full Press - Retain - A25e - Left - CP - Left - Retain - Left - Full Press - TO - Left - 75 Press - TO - Right - Full Press - Retain - Full Press - TO - Centre Top - Counterattack - A25e - Right - CP - Right - GSO - off target - TO C - Full Press - TO - Centre Top - Centre Top - Full Press - TO - Centre Top - Counterattack - Centre Top - Breach - A25e - Centre Top - TO - Centre Top - Counterattack - Breach - A25e - Right - TO - Right - Deep Press - Retain - Deep Press - TO - Centre Top - 75 Press - TO - Centre Top - Counterattack - TO - A25e - Right - CP - Right - Retain - CP - Right - PCW - GSO - on target - saved - GSO - on target - saved - CP - Right - GSO - TO C - on target - saved - Counterattack - TO - Right - A25e - Centre Top - CP - Left - TO C - Full Press - Retain
+67:23:00,68,67:49:00,68,Opp BS2,75 Press - A25e
+67:34:00,32,67:53:00,32,Opp A25 E,Left - TO
+67:47:00,36,68:12:00,36,Opp TO4,Left
+67:55:00,8,68:21:00,8,Own BS2,Retain - Full Press
+68:01:00,44,68:28:00,32,Own BS2,Full Press - A25e
+68:20:00,88,68:39:00,88,Own  A25 E,Left - CP
+68:11:00,4,68:44:00,4,Own Circle possesion,Left - TO C
+68:30:00,44,68:55:00,44,Own TO C,
+69:04:00,16,69:30:00,16,Opp BS1,Full Press - Retain
+69:55:00,16,70:21:00,16,Opp BS3,Full Press - Outlet
+70:03:00,28,70:28:00,28,Opp Outlet,Deep Press - A25e
+70:03:00,8,70:22:00,8,Opp A25 E,Right - TO
+70:12:00,12,70:37:00,12,Opp TO4,Right
+70:28:00,60,70:53:00,60,Own TO1,Left
+70:16:00,68,70:50:00,68,Opp Circle Possession,Right - TO C
+70:31:00,68,70:56:00,68,Opp TO C,
+70:50:00,76,71:16:00,76,Own BS1,Full Press - Retain
+71:04:00,72,71:30:00,72,Own BS2,75 Press - TO
+71:21:00,56,71:46:00,56,Own TO2,Left
+71:26:00,24,71:52:00,24,Opp BS3,Deep Press - A25e
+71:37:00,0,71:56:00,0,Opp A25 E,Right - CP
+71:32:00,80,72:06:00,80,Opp Circle Possession,BLine R - PCW
+71:48:00,28,71:58:00,28,Opp PCW,
+72:36:00,76,72:48:00,76,Own PCD,
+72:24:00,52,72:49:00,52,Opp GSO,on target - saved
+72:30:00,64,72:55:00,64,Opp GSO,off target
+72:49:00,24,73:14:00,24,Opp TO C,
+72:54:00,72,73:19:00,72,Own TO2,Right
+72:59:00,16,73:24:00,16,Opp Outlet,Deep Press - TO
+73:09:00,40,73:34:00,40,Opp TO3,Right - Counterattack
+72:58:00,24,73:29:00,24,Own counter attack,
+73:08:00,8,73:27:00,8,Own  A25 E,Centre Top - CP
+73:00:00,68,73:33:00,68,Own Circle possesion,Centre Top - TO C
+73:18:00,52,73:43:00,52,Own TO C,
+73:29:00,52,73:55:00,52,Opp BS1,75 Press - Breach - A25e
+73:41:00,4,74:00:00,4,Opp A25 E,Centre Top - CP
+73:33:00,88,74:07:00,88,Opp Circle Possession,Right - TO C
+73:57:00,24,74:22:00,24,Opp TO C,
+74:15:00,84,74:41:00,84,Own BS2,75 Press - TO
+74:25:00,64,74:50:00,64,Own TO3,Left
+74:41:00,96,75:07:00,96,Opp BS2,Full Press - Retain
+74:53:00,44,75:21:00,76,Opp BS4,A25e
+75:04:00,92,75:24:00,92,Opp HB ATT,
+75:13:00,40,75:32:00,40,Opp A25 E,Left - CP
+75:07:00,76,75:41:00,76,Opp Circle Possession,Left - Retain
+75:29:00,4,75:54:00,4,Opp TO4,Left
+75:31:00,24,75:58:00,92,Own BS1,Full Press - TO
+75:54:00,68,76:19:00,68,Own TO3,Left
+75:56:00,64,76:22:00,64,Opp BS2,75 Press - TO
+76:09:00,72,76:34:00,72,Opp TO3,Right
+76:11:00,92,76:37:00,92,Own BS2,Full Press - Retain
+76:19:00,20,76:45:00,20,Own BS2,Full Press - TO
+76:24:00,64,76:49:00,64,Own TO3,Centre Top - Counterattack
+76:13:00,36,76:43:00,36,Opp Counter Attack,A25e
+76:25:00,84,76:44:00,84,Opp A25 E,Right - CP
+76:17:00,24,76:51:00,24,Opp Circle Possession,Right - GSO - TO C
+76:21:00,36,76:46:00,36,Opp GSO,off target
+76:37:00,96,77:02:00,96,Opp TO C,
+76:52:00,40,77:18:00,40,Own BS1,Full Press - TO
+76:58:00,24,77:23:00,24,Own TO2,Centre Top
+77:01:00,28,77:26:00,28,Opp TO4,Centre Top
+77:08:00,40,77:34:00,40,Own BS1,Full Press - TO
+77:13:00,72,77:38:00,72,Own TO2,Centre Top - Counterattack
+77:02:00,68,77:32:00,68,Opp Counter Attack,A25e
+77:12:00,40,77:31:00,40,Opp A25 E,CP - Centre Top
+77:01:00,80,77:35:00,80,Opp Circle Possession,Right - Retain
+77:29:00,48,77:55:00,48,Opp BS4,TO
+77:40:00,48,78:05:00,48,Opp TO4,Left
+77:44:00,28,78:10:00,28,Own BS1,Full Press - TO
+77:53:00,84,78:18:00,84,Own TO2,Left
+77:55:00,0,78:21:00,0,Opp BS3,Full Press - A25e
+77:56:00,20,78:15:00,20,Opp A25 E,Right - TO
+78:03:00,12,78:29:00,12,Opp TO4,Right
+78:24:00,12,78:50:00,12,Own BS1,Full Press - TO
+78:29:00,64,78:54:00,64,Own TO2,Left
+78:31:00,60,78:50:00,60,Opp A25 E,Right - TO
+78:44:00,72,79:09:00,72,Opp TO4,Centre Top - Counterattack
+78:33:00,48,79:03:00,48,Own counter attack,Breach - A25e
+78:48:00,52,79:07:00,52,Own  A25 E,Centre Top - TO
+78:59:00,48,79:24:00,48,Own TO4,Centre Top - Counterattack
+78:51:00,80,79:21:00,80,Opp Counter Attack,Breach - A25e
+79:03:00,0,79:22:00,0,Opp A25 E,Right - TO
+79:12:00,64,79:37:00,64,Opp TO4,Right
+79:36:00,12,80:02:00,12,Own BS2,Deep Press - Retain
+79:58:00,96,80:24:00,96,Own BS3,Deep Press - TO
+80:13:00,12,80:38:00,12,Own TO4,Centre Top
+80:29:00,84,80:55:00,84,Opp BS1,75 Press - TO
+80:41:00,36,81:06:00,36,Opp TO3,Centre Top - Counterattack
+80:30:00,8,81:00:00,8,Own counter attack,A25e
+80:46:00,16,81:05:00,16,Own  A25 E,Right - CP
+80:38:00,76,81:11:00,76,Own Circle possesion,Right - Retain
+81:09:00,48,81:35:00,48,Own BS4,CP
+80:58:00,16,81:31:00,16,Own Circle possesion,Right - PCW
+81:13:00,16,81:23:00,16,Own PCW,
+82:13:00,12,82:25:00,12,Own PCA,GSO
+82:05:00,32,82:30:00,32,Own GSO,on target - saved
+82:24:00,12,82:34:00,12,Own PCW,
+83:02:00,36,83:14:00,36,Own PCA,
+83:09:00,16,83:19:00,16,Own PCW,
+83:37:00,52,83:49:00,52,Own PCA,
+83:42:00,0,83:52:00,0,Own PCW,
+84:08:00,0,84:20:00,0,Own PCA,GSO
+83:57:00,48,84:22:00,48,Own GSO,on target - saved
+84:13:00,4,84:23:00,4,Own PCW,
+84:58:00,36,85:10:00,36,Own PCA,
+85:22:00,4,85:48:00,4,Own BS4,CP
+85:10:00,48,85:43:00,48,Own Circle possesion,Right - GSO - TO C
+85:18:00,84,85:43:00,84,Own GSO,on target - saved
+85:32:00,40,85:57:00,40,Own TO C,Counterattack
+85:21:00,64,85:51:00,64,Opp Counter Attack,TO
+85:38:00,28,86:03:00,28,Opp TO2,Right
+85:26:00,84,85:56:00,84,Own counter attack,A25e
+85:35:00,84,85:54:00,84,Own  A25 E,Centre Top - CP
+85:27:00,20,86:00:00,20,Own Circle possesion,Left - TO C
+85:46:00,0,86:11:00,0,Own TO C,
+86:23:00,76,86:41:00,88,Opp BS1,Full Press - Retain
+86:36:00,24,86:41:00,88,End,
