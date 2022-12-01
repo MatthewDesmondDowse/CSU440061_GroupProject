@@ -11,6 +11,7 @@ from getSides import getStartSide,getEndSide
 #TO
 #breaches
 #only left with no other chars(only take slice of 4)
+#may need to remove some rows with 0 in any cell(no side)
 
 outdf = pd.DataFrame(columns=['Start&Side','Finish&Side','GSO'])
 
@@ -21,8 +22,8 @@ all_files = glob.glob(os.path.join(path , "*.csv"))
 hit=0       #testing
 fail=0      #testing
 
-for filename in [str(path)+'\Game 1.csv',str(path)+'\Game 10.csv']:
-#filename=str(path)+'\Game 10.csv'    #testing
+for filename in all_files:
+#filename=str(path)+'\Game 13.csv'    #testing
     print(str(fail+hit+1)+' '+filename)  #testing
     df = pd.read_csv(filename, header=1)                                                #need to remove header or run into length mismatch error with column names 
     columns = ['Start','End','Category','Descriptors','Brief','Detailed']            #named column 5 'Brief' and column 6 'Detailed'
@@ -59,8 +60,8 @@ for filename in [str(path)+'\Game 1.csv',str(path)+'\Game 10.csv']:
             tmpdf = pd.DataFrame(np.array([startSide,endSide,1]).reshape(1,-1), columns=['Start&Side','Finish&Side','GSO'])
             outdf = pd.concat([outdf,tmpdf],ignore_index=True)   
         
-    outdf.to_csv('hockey.csv', index=False)
-    #os.startfile('hockey.csv')              #testing
+outdf.to_csv('hockey.csv', index=False)
+os.startfile('hockey.csv')              #testing
     
 
 print("hits: "+ str(hit))
