@@ -61,7 +61,7 @@ for filename in all_files:
             outdf = pd.concat([outdf,tmpdf],ignore_index=True)   
         
 outdf.to_csv('hockey.csv', index=False)
-os.startfile('hockey.csv')              #testing
+#os.startfile('hockey.csv')              #testing
     
 
 print("hits: "+ str(hit))
