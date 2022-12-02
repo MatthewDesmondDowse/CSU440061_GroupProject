@@ -25,19 +25,32 @@ negList =df[df['GSO'] == -1]
 #get all the postives and negatives to graph later in different colours.
 startingPos=posList.iloc[:,0]
 endingPos=posList.iloc[:,1]
-startingNeg=negList[:,0]
-endingNeg=negList[:,1]
+startingNeg=negList.iloc[:,0]
+endingNeg=negList.iloc[:,1]
 
 #create 2D plot of full dataset 
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
+ax1.scatter(startingNeg, endingNeg, color='black', marker='o', label='y-axis')
 ax1.scatter(startingPos, endingPos, color='green', marker='+', label='x-axis')
-ax1.scatter(startingPos, endingPos, color='black', marker='o', label='y-axis')
-ax1.legend(['is GSO = 1', 'is GSO = -1'], bbox_to_anchor =(1, 0.5))
+ax1.legend(['is GSO = -1', 'is GSO = 1'], bbox_to_anchor =(1, 0.5))
 plt.title("Scatter plot of full dataset, showing all atacks with y ouput dictating marker")
 plt.xlabel("X-axis, Feature 1, X1")
 plt.ylabel("Y-axis, Feature 2, X2")
 plt.show()
+
+###
+# Separate data into two graphs for GSO and not GSO
+# fig = plt.figure()
+# ax1.scatter(startingPos, endingPos, color='green', marker='+', label='x-axis')
+# ax1.scatter(startingPos, endingPos, color='black', marker='o', label='y-axis')
+# ax1.legend(['is GSO = 1', 'is GSO = -1'], bbox_to_anchor =(1, 0.5))
+# plt.title("Scatter plot of full dataset, showing all atacks with y ouput dictating marker")
+# plt.xlabel("X-axis, Feature 1, X1")
+# plt.ylabel("Y-axis, Feature 2, X2")
+# plt.show()
+
+
 
 #Get column data
 startingArea = df.iloc[:,0]
@@ -53,6 +66,7 @@ ax.set_xlabel('X-axis - Starting area', fontweight='bold')
 ax.set_ylabel('Y-axis - Ending area', fontweight='bold')
 ax.set_zlabel('Z-axis - GSO', fontweight='bold')
 plt.title("3D Scatter plot of full dataset")
+plt.show()
 
 ###################################################################################################
 ###################################################################################################
@@ -86,7 +100,7 @@ for Ci in Ci_range:
 
 import matplotlib.pyplot as plt
 plt.errorbar(Ci_range, mean_error, yerr=std_error)
-plt.xlabel('Ci');plt.ylabel('F1 score') 
+plt.xlabel('Ci'); plt.ylabel('F1 score') 
 plt.title('Error bar graph showing Weights C against F1 Score')  
 plt.show()
     
@@ -113,15 +127,15 @@ print("prediction = ", y_pred)
 score = lRmodel.score(X_test, y_test)
 print("Score = ", score)   
 
-##not sure if needed
-# fig = plt.figure()
-# ax = fig.add_subplot(projection='3d')
-# ax.scatter(X_test.iloc[:,1], X_test.iloc[:,2], y_pred)
-# ax.set_xlabel('X-axis - X1', fontweight ='bold')
-# ax.set_ylabel('Y-axis - X2', fontweight ='bold')
-# ax.set_zlabel('Z-axis - y', fontweight ='bold')
-# plt.title("3D scatter plot of testing data")
-# plt.show()
+#not sure if needed
+fig = plt.figure()
+ax = fig.add_subplot(projection='3d')
+ax.scatter(X_test[:,0], X_test[:,1], y_pred)
+ax.set_xlabel('X-axis - X1', fontweight ='bold')
+ax.set_ylabel('Y-axis - X2', fontweight ='bold')
+ax.set_zlabel('Z-axis - y', fontweight ='bold')
+plt.title("3D scatter plot of testing data with prediction")
+plt.show()
 
 ## CONFUSION MATRIX
 from sklearn.metrics import confusion_matrix
@@ -199,7 +213,7 @@ ax.scatter(X_test[:,0], X_test[:,1], y_pred)
 ax.set_xlabel('X-axis - X1', fontweight ='bold')
 ax.set_ylabel('Y-axis - X2', fontweight ='bold')
 ax.set_zlabel('Z-axis - y', fontweight ='bold')
-plt.title("3D scatter plot of testting data")
+plt.title("3D scatter plot of testing data with prediciton")
 plt.show()
 
 ## CONFUSION MATRIX
