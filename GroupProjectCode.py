@@ -129,19 +129,41 @@ print("prediction = ", y_pred)
 score = lRmodel.score(X_test, y_test)
 print("Score = ", score)   
 
-#Baseline Comparison 
+#Baseline Comparison using Dummy Regressor 
 from sklearn.dummy import DummyRegressor
 dummy_regr = DummyRegressor(strategy="median")
 dummy_regr.fit(X_test, y_test) 
 dummypred = dummy_regr.predict(X_test)
 dummytest = dummy_regr.score(X_test, y_test)   
 
+dummy_regr2 = DummyRegressor(strategy="mean")
+dummy_regr2.fit(X_test, y_test) 
+dummypred2 = dummy_regr2.predict(X_test)
+dummytest2 = dummy_regr2.score(X_test, y_test) 
+#print("Score for Dummy Median ",)
 #Compare Mean Squared error to see whether constant or regressions has higher error.
 from sklearn.metrics import mean_squared_error
-print("square error %f %f"%(mean_squared_error(y_test,y_pred),mean_squared_error(y_test,dummypred)))
+#print("square error of median %f %f"%(mean_squared_error(y_test,y_pred),mean_squared_error(y_test,dummypred)))
+#print("square error of mean %f %f"%(mean_squared_error(y_test,y_pred),mean_squared_error(y_test,dummypred2)))
 
 
-
+#Baseline Comparison using Dummy Classifier
+from sklearn.dummy import DummyClassifier
+dummy_clf = DummyClassifier(strategy="most_frequent")
+dummy_clf.fit(X_train, y_train)
+dummy_clf.predict(X_train)
+clfScore = dummy_clf.score(X_train, y_train)
+dummy_clf2 = DummyClassifier(strategy="uniform")
+dummy_clf2.fit(X_train, y_train)
+dummy_clf2.predict(X_train)
+clfScore2 = dummy_clf2.score(X_train, y_train)
+dummy_clf3 = DummyClassifier(strategy="prior")
+dummy_clf3.fit(X_train, y_train)
+dummy_clf3.predict(X_train)
+clfScore3 = dummy_clf3.score(X_train, y_train)
+print("Classifier Score Most Frequent ",clfScore)
+print("Classifier Score Uniform",clfScore2)
+print("Classifier Score Prior",clfScore3)
 
 #not sure if needed
 fig = plt.figure()
