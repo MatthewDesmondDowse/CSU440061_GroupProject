@@ -92,14 +92,14 @@ for Ci in Ci_range:
         lRmodel.fit(X[train], gso[train])
         ypred = lRmodel.predict(X[test])
         from sklearn.model_selection import cross_val_score
-        scores = cross_val_score(lRmodel, X, gso, cv=5, scoring='f1')
+        scores = cross_val_score(lRmodel, X, gso, cv=5, scoring='accuracy')
     mean_error.append(np.array(scores).mean())
     std_error.append(np.array(scores).std())    
 
 import matplotlib.pyplot as plt
 plt.errorbar(Ci_range, mean_error, yerr=std_error)
-plt.xlabel('Ci'); plt.ylabel('F1 score') 
-plt.title('Error bar graph showing Weights C against F1 Score')  
+plt.xlabel('Ci'); plt.ylabel('Accuracy score') 
+plt.title('Error bar graph showing Weights C against Accuracy Scores')  
 plt.show()
         
 # C weight should be chosen now
