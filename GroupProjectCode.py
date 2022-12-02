@@ -2,8 +2,6 @@
 # Group 60 
 # Matthew Dowse
 
-## Similar to my assignment 4 in parts
-
 import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt
@@ -12,7 +10,7 @@ import matplotlib.pyplot as plt
 # called hockey.csv 
 # in the format of 
 # column 0 = Start + Side, column 1 = Finish + Side, GSO = 0 or 1
-df = pd.read_csv("hockey.csv")
+df = pd.read_csv("hockey.csv", index_col=False)
 columns = ['Starting', 'Ending', 'GSO']
 df.columns = columns
 print(df.head())
@@ -21,6 +19,8 @@ print(df.head())
 # posList is when GSO = 1, negList when GSO is -1
 posList = df[df['GSO'] == 1]
 negList =df[df['GSO'] == -1]
+
+print(posList)
 
 #get all the postives and negatives to graph later in different colours.
 startingPos=posList.iloc[:,0]
@@ -39,18 +39,16 @@ plt.xlabel("X-axis, Feature 1, X1")
 plt.ylabel("Y-axis, Feature 2, X2")
 plt.show()
 
-###
-# Separate data into two graphs for GSO and not GSO
-# fig = plt.figure()
-# ax1.scatter(startingPos, endingPos, color='green', marker='+', label='x-axis')
-# ax1.scatter(startingPos, endingPos, color='black', marker='o', label='y-axis')
-# ax1.legend(['is GSO = 1', 'is GSO = -1'], bbox_to_anchor =(1, 0.5))
-# plt.title("Scatter plot of full dataset, showing all atacks with y ouput dictating marker")
-# plt.xlabel("X-axis, Feature 1, X1")
-# plt.ylabel("Y-axis, Feature 2, X2")
-# plt.show()
-
-
+##
+#Separate data into two graphs for GSO and not GSO
+fig = plt.figure()
+ax1 = fig.add_subplot(111)
+ax1.scatter(startingPos, endingPos, color='green', marker='+')
+ax1.legend(['is GSO = 1'], bbox_to_anchor =(1, 0.5))
+plt.title("Scatter plot of full dataset, showing all atacks with y ouput dictating marker")
+plt.xlabel("X-axis, Feature 1, X1")
+plt.ylabel("Y-axis, Feature 2, X2")
+plt.show()
 
 #Get column data
 startingArea = df.iloc[:,0]
@@ -103,11 +101,10 @@ plt.errorbar(Ci_range, mean_error, yerr=std_error)
 plt.xlabel('Ci'); plt.ylabel('F1 score') 
 plt.title('Error bar graph showing Weights C against F1 Score')  
 plt.show()
-    
-     
-
-    
+        
 # C weight should be chosen now
+# probably 5
+# graph was weird
 
 ##Logistic regression time. 
 ## Thoughts: either split 80:20 or try K-fold ? Lets do both since our dataset is small
@@ -119,7 +116,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, gso, test_size=0.2, rando
 #fit model with l2 penalty with weight C = 
 ### ADD C VALUE its 5 right now
 from sklearn.linear_model import LogisticRegression
-lRmodel = LogisticRegression(penalty='l2', C=5, solver='lbfgs')
+lRmodel = LogisticRegression(penalty='l2', C=5, solver='liblinear')
 #fit the model with the training data
 lRmodel.fit(X_train, y_train)
 #predictions of y using test data
@@ -129,50 +126,14 @@ print("prediction = ", y_pred)
 score = lRmodel.score(X_test, y_test)
 print("Score = ", score)   
 
-#Baseline Comparison using Dummy Regressor 
-from sklearn.dummy import DummyRegressor
-dummy_regr = DummyRegressor(strategy="median")
-dummy_regr.fit(X_test, y_test) 
-dummypred = dummy_regr.predict(X_test)
-dummytest = dummy_regr.score(X_test, y_test)   
-
-dummy_regr2 = DummyRegressor(strategy="mean")
-dummy_regr2.fit(X_test, y_test) 
-dummypred2 = dummy_regr2.predict(X_test)
-dummytest2 = dummy_regr2.score(X_test, y_test) 
-#print("Score for Dummy Median ",)
-#Compare Mean Squared error to see whether constant or regressions has higher error.
-from sklearn.metrics import mean_squared_error
-#print("square error of median %f %f"%(mean_squared_error(y_test,y_pred),mean_squared_error(y_test,dummypred)))
-#print("square error of mean %f %f"%(mean_squared_error(y_test,y_pred),mean_squared_error(y_test,dummypred2)))
-
-
-#Baseline Comparison using Dummy Classifier
-from sklearn.dummy import DummyClassifier
-dummy_clf = DummyClassifier(strategy="most_frequent")
-dummy_clf.fit(X_train, y_train)
-dummy_clf.predict(X_train)
-clfScore = dummy_clf.score(X_train, y_train)
-dummy_clf2 = DummyClassifier(strategy="uniform")
-dummy_clf2.fit(X_train, y_train)
-dummy_clf2.predict(X_train)
-clfScore2 = dummy_clf2.score(X_train, y_train)
-dummy_clf3 = DummyClassifier(strategy="prior")
-dummy_clf3.fit(X_train, y_train)
-dummy_clf3.predict(X_train)
-clfScore3 = dummy_clf3.score(X_train, y_train)
-print("Classifier Score Most Frequent ",clfScore)
-print("Classifier Score Uniform",clfScore2)
-print("Classifier Score Prior",clfScore3)
-
-#not sure if needed
+#Logistic 
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.scatter(X_test[:,0], X_test[:,1], y_pred)
 ax.set_xlabel('X-axis - X1', fontweight ='bold')
 ax.set_ylabel('Y-axis - X2', fontweight ='bold')
 ax.set_zlabel('Z-axis - y', fontweight ='bold')
-plt.title("3D scatter plot of testing data with prediction")
+plt.title("3D scatter plot of testing data with prediction from Logistic Regression")
 plt.show()
 
 ## CONFUSION MATRIX
@@ -271,3 +232,24 @@ plt.ylabel('True positive rate')
 plt.title('ROC curve for kNN Classifier Model')
 plt.plot([0, 1], [0, 1], color='green',linestyle='--')
 plt.show()
+
+#############################################################################################################
+#############################################################################################################
+
+#Baseline Comparison using Dummy Classifier
+from sklearn.dummy import DummyClassifier
+dummy_clf = DummyClassifier(strategy="most_frequent")
+dummy_clf.fit(X_train, y_train)
+dummy_clf.predict(X_train)
+clfScore = dummy_clf.score(X_train, y_train)
+dummy_clf2 = DummyClassifier(strategy="uniform")
+dummy_clf2.fit(X_train, y_train)
+dummy_clf2.predict(X_train)
+clfScore2 = dummy_clf2.score(X_train, y_train)
+dummy_clf3 = DummyClassifier(strategy="prior")
+dummy_clf3.fit(X_train, y_train)
+dummy_clf3.predict(X_train)
+clfScore3 = dummy_clf3.score(X_train, y_train)
+print("Classifier Score Most Frequent ",clfScore)
+print("Classifier Score Uniform",clfScore2)
+print("Classifier Score Prior",clfScore3)
