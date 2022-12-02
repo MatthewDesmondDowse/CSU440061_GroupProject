@@ -80,6 +80,7 @@ plt.show()
 # but not too small so it increases the prediction error 
 # Note - penalty for l1 and l2
 # using cross val score and f1 scoring for error
+# perhaps change to accuracy
 mean_error=[]; std_error=[]
 Ci_range = [0.1, 0.5, 1, 5, 10, 50, 100]
 for Ci in Ci_range:
@@ -99,7 +100,7 @@ for Ci in Ci_range:
 import matplotlib.pyplot as plt
 plt.errorbar(Ci_range, mean_error, yerr=std_error)
 plt.xlabel('Ci'); plt.ylabel('Accuracy score') 
-plt.title('Error bar graph showing Weights C against Accuracy Scores')  
+plt.title('Error bar graph showing Weights C against Accuracy Score')  
 plt.show()
         
 # C weight should be chosen now
@@ -110,13 +111,24 @@ plt.show()
 ## Thoughts: either split 80:20 or try K-fold ? Lets do both since our dataset is small
 ## l1 or l2 
 
+from sklearn.model_selection import KFold
+kf = KFold(n_splits=5)
+for train, test in kf.split(X):
+    from sklearn.linear_model import LogisticRegression
+    model = LogisticRegression(penalty='l2', C=1, solver='liblinear').fit(X[train], gso[train])
+    ypred = model.predict(X[test])
+    print("prediction = ", ypred)
+    score = model.score(X[test], gso[test])
+    print("Score = ", score)  
+    
+
 # 1. 80:20 split, l2 penalty
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, gso, test_size=0.2, random_state=15)  
 #fit model with l2 penalty with weight C = 
 ### ADD C VALUE its 5 right now
 from sklearn.linear_model import LogisticRegression
-lRmodel = LogisticRegression(penalty='l2', C=5, solver='liblinear')
+lRmodel = LogisticRegression(penalty='l2', C=1, solver='liblinear')
 #fit the model with the training data
 lRmodel.fit(X_train, y_train)
 #predictions of y using test data
@@ -126,13 +138,13 @@ print("prediction = ", y_pred)
 score = lRmodel.score(X_test, y_test)
 print("Score = ", score)   
 
-#Logistic 
+#Logistic 3D
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.scatter(X_test[:,0], X_test[:,1], y_pred)
-ax.set_xlabel('X-axis - X1', fontweight ='bold')
-ax.set_ylabel('Y-axis - X2', fontweight ='bold')
-ax.set_zlabel('Z-axis - y', fontweight ='bold')
+ax.set_xlabel('X-axis - Starting area', fontweight='bold')
+ax.set_ylabel('Y-axis - Ending area', fontweight='bold')
+ax.set_zlabel('Z-axis - GSO', fontweight='bold')
 plt.title("3D scatter plot of testing data with prediction from Logistic Regression")
 plt.show()
 
@@ -209,9 +221,9 @@ plt.show()
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.scatter(X_test[:,0], X_test[:,1], y_pred)
-ax.set_xlabel('X-axis - X1', fontweight ='bold')
-ax.set_ylabel('Y-axis - X2', fontweight ='bold')
-ax.set_zlabel('Z-axis - y', fontweight ='bold')
+ax.set_xlabel('X-axis - Starting area', fontweight='bold')
+ax.set_ylabel('Y-axis - Ending area', fontweight='bold')
+ax.set_zlabel('Z-axis - GSO', fontweight='bold')
 plt.title("3D scatter plot of testing data with prediciton")
 plt.show()
 
@@ -255,3 +267,148 @@ print("Confusion Matrix for dummy = " , confusion_matrix(y_test, dummPrediction)
 print("Classifier Score Most Frequent ",clfScore)
 print("Classifier Score Uniform",clfScore2)
 print("Classifier Score Prior",clfScore3)
+
+##bar chart of area on pitch attack started for GSo==1
+left1= [0,0,0,0]
+right1= [0,0,0,0]
+centre1= [0,0,0,0]
+
+#graph of area of pitch attack starts
+for i in df.index:
+    if(df['GSO'][i]==1):
+        if(df['Starting'][i]==11):
+            left1[0]+=1
+        if(df['Starting'][i]==12):
+            centre1[0]+=1
+        if(df['Starting'][i]==13):
+            right1[0]+=1
+
+        if(df['Starting'][i]==21):
+            left1[1]+=1
+        if(df['Starting'][i]==22):
+            centre1[1]+=1
+        if(df['Starting'][i]==23):
+            right1[1]+=1
+
+        if(df['Starting'][i]==31):
+            left1[2]+=1
+        if(df['Starting'][i]==32):
+            centre1[2]+=1
+        if(df['Starting'][i]==33):
+            right1[2]+=1
+
+        if(df['Starting'][i]==41):
+            left1[3]+=1
+        if(df['Starting'][i]==42):
+            centre1[3]+=1
+        if(df['Starting'][i]==43):
+            right1[3]+=1
+
+labels = ['Q1', 'Q2', 'Q3', 'Q4']
+x = np.arange(len(labels))  # the label locations
+
+fig, ax = plt.subplots()
+
+width=0.3
+rects1 = ax.bar(x - width, left1, width, label='Left')
+rects2 = ax.bar(x, centre1, width, label='Centre')
+rects3 = ax.bar(x + width, right1, width, label='Right')
+
+ax.set_ylabel('Number of Attacks')
+ax.set_xlabel('Quarter Attack Started')
+ax.set_title('Areas Attacks Started leading to GSO')
+ax.set_xticks(x, labels)
+ax.legend(bbox_to_anchor =(1, 0.5))
+
+ax.bar_label(rects1, padding=3)
+ax.bar_label(rects2, padding=3)
+ax.bar_label(rects3, padding=3)
+
+fig.tight_layout()
+#plt.show()
+
+#graph of area of pitch attack starts for GSO==-1
+
+left2= [0,0,0,0]
+right2= [0,0,0,0]
+centre2= [0,0,0,0]
+
+for i in df.index:
+    if(df['GSO'][i]==-1):
+        if(df['Starting'][i]==11):
+            left2[0]+=1
+        if(df['Starting'][i]==12):
+            centre2[0]+=1
+        if(df['Starting'][i]==13):
+            right2[0]+=1
+
+        if(df['Starting'][i]==21):
+            left2[1]+=1
+        if(df['Starting'][i]==22):
+            centre2[1]+=1
+        if(df['Starting'][i]==23):
+            right2[1]+=1
+
+        if(df['Starting'][i]==31):
+            left2[2]+=1
+        if(df['Starting'][i]==32):
+            centre2[2]+=1
+        if(df['Starting'][i]==33):
+            right2[2]+=1
+
+        if(df['Starting'][i]==41):
+            left2[3]+=1
+        if(df['Starting'][i]==42):
+            centre2[3]+=1
+        if(df['Starting'][i]==43):
+            right2[3]+=1
+
+labels = ['Q1', 'Q2', 'Q3', 'Q4']
+x = np.arange(len(labels))  # the label locations
+
+fig, ax = plt.subplots()
+
+width=0.3
+rects4 = ax.bar(x - width, left2, width, label='Left')
+rects5 = ax.bar(x, centre2, width, label='Centre')
+rects6 = ax.bar(x + width, right2, width, label='Right')
+
+ax.set_ylabel('Number of Attacks')
+ax.set_xlabel('Quarter Attack Started')
+ax.set_title('Areas Attacks Started not leading to GSO')
+ax.set_xticks(x, labels)
+ax.legend(bbox_to_anchor =(1, 0.5))
+
+ax.bar_label(rects4, padding=3)
+ax.bar_label(rects5, padding=3)
+ax.bar_label(rects6, padding=3)
+
+fig.tight_layout()
+#plt.show()
+
+
+labels = ['Q1', 'Q2', 'Q3', 'Q4']
+x = np.arange(len(labels))  # the label locations
+
+fig, ax = plt.subplots()
+
+width=0.3
+left3 = np.add(left1,left2)
+centre3 = np.add(centre1,centre2)
+right3 = np.add(right1,right2)
+rects7 = ax.bar(x - width, left3, width, label='Left')
+rects8 = ax.bar(x, centre3, width, label='Centre')
+rects9 = ax.bar(x + width, right3, width, label='Right')
+
+ax.set_ylabel('Number of Attacks')
+ax.set_xlabel('Quarter Attack Started')
+ax.set_title('Areas Attacks Started')
+ax.set_xticks(x, labels)
+ax.legend(bbox_to_anchor =(1, 0.5))
+
+ax.bar_label(rects7, padding=3)
+ax.bar_label(rects8, padding=3)
+ax.bar_label(rects9, padding=3)
+
+fig.tight_layout()
+plt.show()
