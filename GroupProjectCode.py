@@ -104,7 +104,9 @@ plt.xlabel('Ci'); plt.ylabel('F1 score')
 plt.title('Error bar graph showing Weights C against F1 Score')  
 plt.show()
     
-        
+     
+
+    
 # C weight should be chosen now
 
 ##Logistic regression time. 
@@ -126,6 +128,20 @@ print("prediction = ", y_pred)
 #Check accuracy between prediction and actual test data
 score = lRmodel.score(X_test, y_test)
 print("Score = ", score)   
+
+#Baseline Comparison 
+from sklearn.dummy import DummyRegressor
+dummy_regr = DummyRegressor(strategy="median")
+dummy_regr.fit(X_test, y_test) 
+dummypred = dummy_regr.predict(X_test)
+dummytest = dummy_regr.score(X_test, y_test)   
+
+#Compare Mean Squared error to see whether constant or regressions has higher error.
+from sklearn.metrics import mean_squared_error
+print("square error %f %f"%(mean_squared_error(y_test,y_pred),mean_squared_error(y_test,dummypred)))
+
+
+
 
 #not sure if needed
 fig = plt.figure()
