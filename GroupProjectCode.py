@@ -265,3 +265,148 @@ clfScore3 = dummy_clf3.score(X_train, y_train)
 print("Classifier Score Most Frequent ",clfScore)
 print("Classifier Score Uniform",clfScore2)
 print("Classifier Score Prior",clfScore3)
+
+##bar chart of area on pitch attack started for GSo==1
+left1= [0,0,0,0]
+right1= [0,0,0,0]
+centre1= [0,0,0,0]
+
+#graph of area of pitch attack starts
+for i in df.index:
+    if(df['GSO'][i]==1):
+        if(df['Starting'][i]==11):
+            left1[0]+=1
+        if(df['Starting'][i]==12):
+            centre1[0]+=1
+        if(df['Starting'][i]==13):
+            right1[0]+=1
+
+        if(df['Starting'][i]==21):
+            left1[1]+=1
+        if(df['Starting'][i]==22):
+            centre1[1]+=1
+        if(df['Starting'][i]==23):
+            right1[1]+=1
+
+        if(df['Starting'][i]==31):
+            left1[2]+=1
+        if(df['Starting'][i]==32):
+            centre1[2]+=1
+        if(df['Starting'][i]==33):
+            right1[2]+=1
+
+        if(df['Starting'][i]==41):
+            left1[3]+=1
+        if(df['Starting'][i]==42):
+            centre1[3]+=1
+        if(df['Starting'][i]==43):
+            right1[3]+=1
+
+labels = ['Q1', 'Q2', 'Q3', 'Q4']
+x = np.arange(len(labels))  # the label locations
+
+fig, ax = plt.subplots()
+
+width=0.3
+rects1 = ax.bar(x - width, left1, width, label='Left')
+rects2 = ax.bar(x, centre1, width, label='Centre')
+rects3 = ax.bar(x + width, right1, width, label='Right')
+
+ax.set_ylabel('Number of Attacks')
+ax.set_xlabel('Quarter Attack Started')
+ax.set_title('Areas Attacks Started leading to GSO')
+ax.set_xticks(x, labels)
+ax.legend(bbox_to_anchor =(1, 0.5))
+
+ax.bar_label(rects1, padding=3)
+ax.bar_label(rects2, padding=3)
+ax.bar_label(rects3, padding=3)
+
+fig.tight_layout()
+#plt.show()
+
+#graph of area of pitch attack starts for GSO==-1
+
+left2= [0,0,0,0]
+right2= [0,0,0,0]
+centre2= [0,0,0,0]
+
+for i in df.index:
+    if(df['GSO'][i]==-1):
+        if(df['Starting'][i]==11):
+            left2[0]+=1
+        if(df['Starting'][i]==12):
+            centre2[0]+=1
+        if(df['Starting'][i]==13):
+            right2[0]+=1
+
+        if(df['Starting'][i]==21):
+            left2[1]+=1
+        if(df['Starting'][i]==22):
+            centre2[1]+=1
+        if(df['Starting'][i]==23):
+            right2[1]+=1
+
+        if(df['Starting'][i]==31):
+            left2[2]+=1
+        if(df['Starting'][i]==32):
+            centre2[2]+=1
+        if(df['Starting'][i]==33):
+            right2[2]+=1
+
+        if(df['Starting'][i]==41):
+            left2[3]+=1
+        if(df['Starting'][i]==42):
+            centre2[3]+=1
+        if(df['Starting'][i]==43):
+            right2[3]+=1
+
+labels = ['Q1', 'Q2', 'Q3', 'Q4']
+x = np.arange(len(labels))  # the label locations
+
+fig, ax = plt.subplots()
+
+width=0.3
+rects4 = ax.bar(x - width, left2, width, label='Left')
+rects5 = ax.bar(x, centre2, width, label='Centre')
+rects6 = ax.bar(x + width, right2, width, label='Right')
+
+ax.set_ylabel('Number of Attacks')
+ax.set_xlabel('Quarter Attack Started')
+ax.set_title('Areas Attacks Started not leading to GSO')
+ax.set_xticks(x, labels)
+ax.legend(bbox_to_anchor =(1, 0.5))
+
+ax.bar_label(rects4, padding=3)
+ax.bar_label(rects5, padding=3)
+ax.bar_label(rects6, padding=3)
+
+fig.tight_layout()
+#plt.show()
+
+
+labels = ['Q1', 'Q2', 'Q3', 'Q4']
+x = np.arange(len(labels))  # the label locations
+
+fig, ax = plt.subplots()
+
+width=0.3
+left3 = np.add(left1,left2)
+centre3 = np.add(centre1,centre2)
+right3 = np.add(right1,right2)
+rects7 = ax.bar(x - width, left3, width, label='Left')
+rects8 = ax.bar(x, centre3, width, label='Centre')
+rects9 = ax.bar(x + width, right3, width, label='Right')
+
+ax.set_ylabel('Number of Attacks')
+ax.set_xlabel('Quarter Attack Started')
+ax.set_title('Areas Attacks Started')
+ax.set_xticks(x, labels)
+ax.legend(bbox_to_anchor =(1, 0.5))
+
+ax.bar_label(rects7, padding=3)
+ax.bar_label(rects8, padding=3)
+ax.bar_label(rects9, padding=3)
+
+fig.tight_layout()
+plt.show()
