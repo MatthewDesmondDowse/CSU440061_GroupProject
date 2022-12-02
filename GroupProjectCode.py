@@ -80,6 +80,7 @@ plt.show()
 # but not too small so it increases the prediction error 
 # Note - penalty for l1 and l2
 # using cross val score and f1 scoring for error
+# perhaps change to accuracy
 mean_error=[]; std_error=[]
 Ci_range = [0.1, 0.5, 1, 5, 10, 50, 100]
 for Ci in Ci_range:
@@ -99,7 +100,7 @@ for Ci in Ci_range:
 import matplotlib.pyplot as plt
 plt.errorbar(Ci_range, mean_error, yerr=std_error)
 plt.xlabel('Ci'); plt.ylabel('Accuracy score') 
-plt.title('Error bar graph showing Weights C against Accuracy Scores')  
+plt.title('Error bar graph showing Weights C against Accuracy Score')  
 plt.show()
         
 # C weight should be chosen now
@@ -110,13 +111,24 @@ plt.show()
 ## Thoughts: either split 80:20 or try K-fold ? Lets do both since our dataset is small
 ## l1 or l2 
 
+from sklearn.model_selection import KFold
+kf = KFold(n_splits=5)
+for train, test in kf.split(X):
+    from sklearn.linear_model import LogisticRegression
+    model = LogisticRegression(penalty='l2', C=1, solver='liblinear').fit(X[train], gso[train])
+    ypred = model.predict(X[test])
+    print("prediction = ", ypred)
+    score = model.score(X[test], gso[test])
+    print("Score = ", score)  
+    
+
 # 1. 80:20 split, l2 penalty
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, gso, test_size=0.2, random_state=15)  
 #fit model with l2 penalty with weight C = 
 ### ADD C VALUE its 5 right now
 from sklearn.linear_model import LogisticRegression
-lRmodel = LogisticRegression(penalty='l2', C=5, solver='liblinear')
+lRmodel = LogisticRegression(penalty='l2', C=1, solver='liblinear')
 #fit the model with the training data
 lRmodel.fit(X_train, y_train)
 #predictions of y using test data
@@ -126,13 +138,13 @@ print("prediction = ", y_pred)
 score = lRmodel.score(X_test, y_test)
 print("Score = ", score)   
 
-#Logistic 
+#Logistic 3D
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.scatter(X_test[:,0], X_test[:,1], y_pred)
-ax.set_xlabel('X-axis - X1', fontweight ='bold')
-ax.set_ylabel('Y-axis - X2', fontweight ='bold')
-ax.set_zlabel('Z-axis - y', fontweight ='bold')
+ax.set_xlabel('X-axis - Starting area', fontweight='bold')
+ax.set_ylabel('Y-axis - Ending area', fontweight='bold')
+ax.set_zlabel('Z-axis - GSO', fontweight='bold')
 plt.title("3D scatter plot of testing data with prediction from Logistic Regression")
 plt.show()
 
@@ -209,9 +221,9 @@ plt.show()
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.scatter(X_test[:,0], X_test[:,1], y_pred)
-ax.set_xlabel('X-axis - X1', fontweight ='bold')
-ax.set_ylabel('Y-axis - X2', fontweight ='bold')
-ax.set_zlabel('Z-axis - y', fontweight ='bold')
+ax.set_xlabel('X-axis - Starting area', fontweight='bold')
+ax.set_ylabel('Y-axis - Ending area', fontweight='bold')
+ax.set_zlabel('Z-axis - GSO', fontweight='bold')
 plt.title("3D scatter plot of testing data with prediciton")
 plt.show()
 
